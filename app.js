@@ -1,12 +1,12 @@
-/* Slow Light — rendering core
+/* Slow Light rendering core
  *
  * Pipeline (all on-device):
- *   1. analyze()   — find point sources (stars) and warm knots (star-forming regions)
- *   2. buildGL()   — upload image, mask and flow textures; fill instance buffers
- *   3. render()    — one frame at loop phase u in [0,1):
+ *   1. analyze() finds point sources (stars) and warm knots (star-forming regions)
+ *   2. buildGL() uploads image, mask and flow textures and fills instance buffers
+ *   3. render() draws one frame at loop phase u in [0,1):
  *        a. galaxy pass: per-pixel inverse warp = differential rotation + slow flow
  *        b. sprite pass: knots and stars as additive gaussian quads (instanced)
- *   4. exportLoop() — record exactly one loop from the canvas at native size
+ *   4. exportLoop() records exactly one loop from the canvas at native size
  *
  * Every animated quantity is a function of u with an integer number of cycles,
  * so frame u=1 equals frame u=0 and the loop is seamless by construction.
