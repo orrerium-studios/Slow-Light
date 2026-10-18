@@ -1,0 +1,4 @@
+# Lines JP ruled may keep an em or en dash. The company commit check reads this file as staged and lets an added line through only when its path and fingerprint match an entry here.
+# Fields, tab separated: path, first 16 hex digits of the SHA-256 of the line without surrounding whitespace, JP's ruling, line number when the entry was written.
+app.html	ff6b6bf3e6343b8d	JP 2026-10-17: "Keep them for dashes shown for "no value""	165
+app.js	d2aaa375e593bba0	JP 2026-10-17: "Keep them for dashes shown for "no value""	693
