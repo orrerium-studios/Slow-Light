@@ -87,3 +87,20 @@ Copyright (C) 2026 Orrerium Studios LLC.
 Slow Light is free software: you can redistribute it and/or modify it under the terms of the [GNU General Public License v3.0](LICENSE).
 
 Imagery from NASA is public domain; ESA/Hubble and ESA/Webb imagery is generally CC BY 4.0 and needs a credit line.
+
+## Project records
+
+Orrerium Studios project, moved into the `orrerium-project-template` layout on 2026-10-17.
+
+| Folder or file | Holds |
+|---|---|
+| `review\` | Work in progress. Nothing here is approved. |
+| `approved\` | Files JP approved out of `review`, each recorded in `approved\LEDGER.md` with his words and the file's hash. Nothing here changes without JP's word; only the newest version of each file is kept. |
+| `gate\` | Gate reports: every measured value, limit and hash a Definition of Done step produced. Tools write here, people read here. |
+| `docs\DECISIONS.md` | The decision log: date, JP's words verbatim, the ruling taken. |
+| `docs\PROPOSALS.md` | Proposals waiting for JP's ruling, each citing its industry standard. |
+| `DEFINITION_OF_DONE.md` | The steps, tools and pass criteria that make a deliverable done in this project. |
+| The assistant's project rules | This project's rules for the assistant, on top of the studio standards. |
+| `scripts\verify_structure.py` | Fails loudly when any of the above is missing or has drifted from the template. |
+
+Release branch: `main` (GitHub Pages and the CI builds run from it). Working branch: `working`. Only `main` is built and shipped, and only after JP approves the merge.

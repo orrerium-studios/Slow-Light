@@ -1,0 +1,35 @@
+{
+ "name": "orrerium-project-template",
+ "version": "1.0.2",
+ "required": [
+  "README.md",
+  "DEFINITION_OF_DONE.md",
+  ".gitignore",
+  ".gitattributes",
+  "review/.gitkeep",
+  "approved/LEDGER.md",
+  "gate/.gitkeep",
+  "docs/DECISIONS.md",
+  "docs/PROPOSALS.md",
+  "scripts/verify_structure.py"
+ ],
+ "substituted": [
+  "README.md",
+  "DEFINITION_OF_DONE.md",
+  "docs/DECISIONS.md"
+ ],
+ "placeholders": {
+  "PROJECT": "the project name given to the scaffold",
+  "DATE": "the scaffold date, ISO"
+ },
+ "record_check_exclusions": [
+  "node_modules",
+  "release",
+  "www",
+  "apps",
+  "android/app/build",
+  "android/app/src/main/assets",
+  "android/capacitor-cordova-android-plugins"
+ ],
+ "record_check_exclusions_note": "Paths inside the project (folders or files) that are not records: third-party code or data, files a program reads at runtime, and authored fiction (dialogue, scripts), whose interruption dashes the working agreement exempts. The record checks skip them."
+}

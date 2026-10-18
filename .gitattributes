@@ -1,0 +1,11 @@
+# Text files are stored with LF line endings whatever the checkout machine uses.
+* text=auto eol=lf
+*.png binary
+*.jpg binary
+*.mp4 binary
+*.blend binary
+*.af binary
+*.esm binary
+# Windows batch files are checked out with CRLF line endings.
+*.bat text eol=crlf
+*.cmd text eol=crlf

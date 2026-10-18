@@ -4,3 +4,16 @@ www/
 ios/
 .DS_Store
 apps/
+# Blender and tool backups
+*.blend1
+*.blend2
+__pycache__/
+*.pyc
+# Local scratch and logs
+*.log
+.lineup_lock
+# Editors
+.vscode/
+.idea/
+# OS
+Thumbs.db
